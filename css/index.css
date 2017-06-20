@@ -1,0 +1,315 @@
+@charset "UTF-8";
+
+/*-----------顶部开始-----------*/
+.container {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    background: url(../images/index_content_img.jpg) no-repeat center center;
+}
+.container .maskLayer {
+    /*position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;*/
+    background: rgba(0,0,0,.2);
+}
+/*导航栏--登录、注册*/
+.container .nav {
+    height: 46px;
+    vertical-align: middle;
+    margin-top: 10px;
+}
+.container .nav .nav_logo {
+    height: 46px;
+    width: 184px;
+    margin-left: 60px;
+}
+.container .nav_logo a{
+    display: block;
+    height: 100%;
+    background: url(../images/logo_top.png) no-repeat;
+    background-size: 70% 100%;
+    text-indent: -999em;
+}
+.container .nav .nav_login {
+    width: 184px;
+    height: 46px;
+    margin-right: 60px;
+}
+.container .nav_login a{
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 20px;
+    margin: 10px 0 0 18px;
+    border: 1px solid #fff;
+    font-size: 14px;
+    color: #fff;
+}
+.container .nav_login a:hover {
+    background: rgba(0,0,0,.2);
+}
+/*搜索框*/
+.container .search {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.3);
+}
+.container .search .search-bar {
+    width: 40%;
+    min-width: 600px;
+    height: 40px;
+    margin: 20px auto;
+}
+.container .search .search-outer {
+    width: 520px;
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: #f4f4f4;
+}
+.container .search .search-inner {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 460px;
+    height: 100%;
+    padding: 0 30px;
+}
+.container .search .search-icon {
+    position: absolute;
+    width: 17px;
+    height: 30px;
+    top: 8px;
+    left: 8px;
+    line-height: 40px;
+    background: url(../images/search-icon.png) no-repeat;
+}
+.container .search-inner input {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    text-indent: 5px;
+    font: 16px/40px "Hiragino Sans GB","华文细黑","Microsoft YaHei";
+}
+.container .search .search-btn {
+    width: 80px;
+    background-color: #FFD000;
+}
+.container .search-btn a {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    font: 16px/40px "Hiragino Sans GB","华文细黑","Microsoft YaHei";
+    color: #fff;
+}
+/*-----------顶部结束-----------*/
+
+/*-----------content start-----------*/
+.index-content {
+    width: 100%;
+    margin-top: 30px;
+}
+/* 3级标题（网上厨房，移动的美食社区）*/
+.index-content h3{
+    text-align: center;
+    margin-bottom: 30px;
+}
+/*轮播图*/
+.index-content .index-main {
+    position: relative;
+}
+.index-content .index-slider {
+    overflow: hidden;
+    position: relative;
+    width: 498px;
+    height: 340px;
+}
+.index-content .index-slider .slider-inner {
+    width: 1000%;
+    /*.slider-inner 绝对定位，以实现轮播动画*/
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.index-content .slider-inner ul {
+    float: left;
+}
+.index-content .slider-inner ul li {
+    float: left;
+}
+/*.index-main 下的所有 a 标签的display为 inline-block*/
+.index-content .index-main a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.index-content .index-main a:hover {
+    color: #fff;
+}
+.index-content .slider-inner a span {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 12px;
+    background: rgba(0,0,0,.55);
+    font-family: "华文细黑";
+    color: #fff;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+/* 轮播图上的小圆点*/
+.index-content .slider-nav {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.index-content .slider-nav ol li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    background-color: #666;
+    margin-left: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.index-content .slider-nav li.current{
+    background-color: #007aff;
+}
+/* 轮播图右边四张图片区域*/
+.index-content .index-right-four {
+    width: 566px;
+    overflow: hidden;
+}
+.index-content .index-right-four li {
+    float: left;
+    width: 244px;
+    height: 154px;
+    /*padding-left: 39px;*/
+    margin: 0 0 32px 39px;
+    overflow: hidden;
+}
+.index-content .index-right-four li.special {
+    /*padding-top: 32px;*/
+}
+.index-content .index-right-four a span,.index-content .index-bottom-five a span {
+    display: inline-block;
+    position: absolute;
+    right: 6px;
+    bottom: 4px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+}
+/* 轮播图下方五张图片的区域 */
+.index-content .index-bottom-five {
+    clear: both;
+    height: 416px;
+    position: relative;
+}
+.index-content .index-bottom-five li {
+    float: left;
+    width: 244px;
+    height: 154px;
+    font-size: 0;
+    position: absolute;
+}
+.index-content .index-bottom-five li.fore1 {
+    left: 0;
+    top:0;
+}
+.index-content .index-bottom-five li.fore2 {
+    height: 230px;
+    left: 0;
+    bottom:0;
+}
+.index-content .index-bottom-five li.fore3 {
+    width: 498px;
+    height: 416px;
+    top: 0;
+    left:283px;
+}
+.index-content .index-bottom-five li.fore4 {
+    top: 0;
+    right:0;
+}
+.index-content .index-bottom-five li.fore5 {
+    height: 230px;
+    right: 0;
+    bottom: 0;
+}
+/*-----------content end !-----------*/
+/*-----------footer start-----------*/
+.footer {
+    width: 100%;
+    background-color: #000;
+    margin-top: 20px;
+    padding-top: 30px;
+}
+.footer .footer-left, .footer .footer-right{
+    width: 50%;
+}
+/* footer 上半部分左边 */
+.footer .footer-left img{
+    width: 205px;
+    height: 95px;
+}
+.footer .footer-left p {
+    color: #fff;
+    line-height: 40px;
+}
+.footer .footer-left em {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0 6px 0 0;
+    color: #ffba13;
+}
+/* footer 上半部分右边 */
+.footer .footer-right p {
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffba13;
+    line-height: 30px;
+}
+.footer .footer-ad img {
+    margin-right: 60px;
+}
+.footer .footer-ad a{
+    display: inline-block;
+}
+/* footer copyright 部分 */
+.footer .footer-copyright {
+    clear: both;
+    width: 100%;
+    height: 51px;
+    padding-top: 10px;
+    text-align: center;
+}
+.footer .bottom-links {
+    padding-bottom: 8px;
+}
+.footer .bottom-links span a{
+    display: inline-block;
+    color: #fff;
+    padding: 0 5px;
+    line-height: 150%;
+}
+.footer .bottom-coypright a:hover{
+    color: #666;
+}
+/*-----------footer end !-----------*/
+
+
